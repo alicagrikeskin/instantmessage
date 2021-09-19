@@ -28,8 +28,7 @@ class _SifremiUnuttumState extends State<SifremiUnuttum> {
                   height: 0.0,
                 ),
           //Doğrusal Yükleniyor İkonumuzu LinearProgressIndicator ile tanımladık.
-          //Soru işareti tek satırlık if sorgumuz ancak Listboxa boş değeer
-          //giremeceyeğimiz için SizedBox ekledilk içi boş.
+          //Soru işareti tek satırlık if sorgumuz ancak Listboxa boş değeer giremeceyeğimiz için SizedBox ekledilk içi boş.
           SizedBox(
             height: 20.0,
           ),
