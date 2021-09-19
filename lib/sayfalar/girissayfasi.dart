@@ -3,6 +3,7 @@ import 'package:instantmessage/modeller/kullanici.dart';
 import 'package:instantmessage/sayfalar/duyurular.dart';
 import 'package:instantmessage/sayfalar/hakkinda.dart';
 import 'package:instantmessage/sayfalar/hesapolustur.dart';
+import 'package:instantmessage/sayfalar/sifremiunuttum.dart';
 import 'package:instantmessage/servisler/firestoreservisi.dart';
 import 'package:instantmessage/servisler/yetkilendirmeservisi.dart';
 import 'package:provider/provider.dart';
@@ -188,7 +189,15 @@ class _GirisSayfasiState extends State<GirisSayfasi> {
           SizedBox(
             height: 20.0,
           ),
-          Center(child: Text("Şifremi Unutttum")),
+          Center(
+              child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => SifremiUnuttum()));
+                  },
+                  child: Text("Şifremi Unutttum"))),
           SizedBox(
             height: 20.0,
           ),
